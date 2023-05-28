@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Shop</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="public_html/css/estilo.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg dark navbar-dark fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">Dream Shop</a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio - (current)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#redes">Redes Sociales</a>
+            </li>
+          </ul>
+          <!-- Icons -->
+          <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="!#"
+                ><i class="fas fa-money-check-alt"></i
+              >: {TOTAL}</a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="!#"
+                ><i class="fas fa-tag"></i
+              >: {ACUM}</a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="!#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <div class="container-fluid p-3 mt-5">
+      <h5 class="text-center">Bienvenido {USRUF}</h5>
+    </div>
+
+    <div class="container-fluid p-3 mt-5">
+      <div class="tab-content shadow-lg">
+          <div class="row m-auto">
+            <div class="col-md-3 w-30">
+              <ul class="nav nav-tabs flex-column">
+                <li>
+                  <a
+                    href="#heading-one"
+                    class="nav-link bg-primary text-white my-1 active"
+                    data-toggle="tab"
+                    >Insertar producto</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#heading-two"
+                    class="nav-link bg-primary text-white my-1"
+                    data-toggle="tab"
+                    >Eliminar productos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#heading-three"
+                    class="nav-link bg-primary text-white my-1"
+                    data-toggle="tab"
+                    >Clientes</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#heading-four"
+                    class="nav-link bg-primary text-white my-1"
+                    data-toggle="tab"
+                    >Proveedores</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#heading-five"
+                    class="nav-link bg-primary text-white my-1"
+                    data-toggle="tab"
+                    >Usuarios</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-9 w-60">
+              <div class="tab-content flex-center">
+                <div class="tab-pane fade show active" id="heading-one">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form>
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form4Example1" class="form-control" />
+                      <label class="form-label" for="form4Example1">Name</label>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form4Example2" class="form-control" />
+                      <label class="form-label" for="form4Example2">Email address</label>
+                    </div>
+                  
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                      <label class="form-label" for="form4Example3">Message</label>
+                    </div>
+                  
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="form4Example4"
+                        checked
+                      />
+                      <label class="form-check-label" for="form4Example4">
+                        Send me a copy of this message
+                      </label>
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+                  </form>
+                </div>
+                <div class="tab-pane fade show" id="heading-two">
+                  <p class="m-5">Content Two</p>
+                </div>
+                <div class="tab-pane fade show" id="heading-three">
+                  <p class="m-5">Content Three</p>
+                </div>
+                <div class="tab-pane fade show" id="heading-four">
+                  <p class="m-5">Content four</p>
+                </div>
+                <div class="tab-pane fade show" id="heading-five">
+                  <p class="m-5">Content five</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="dark text-center text-white showcase" id="redes">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            Dream shop es una tienda de ropa, los mejores diseñadores
+            contemporaneos y extravagantes, encuentra tu estilo y vistete con tu
+            personalidad, expresa lo que no habias expresado.
+          </p>
+        </section>
+        <section>
+          <!--Grid row-->
+          <div class="row d-flex align-content-center">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Categorias:</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#" class="text-white">Sudaderas</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Playeras</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Pantalones</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Accesorios</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Administracion:</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Mapa de sitio</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Politicas de la página</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Reporte de fallos</a>
+                </li>
+                <li>
+                  <a href="admin.html" class="text-white">Modo administrador</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="#">DreamFollowers</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 600,
+        parallax: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script/main.js"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>

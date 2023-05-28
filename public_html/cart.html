@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Shop</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="public_html/css/estilo.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg dark navbar-dark fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">Dream Shop</a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Link -->
+            <li class="nav-item">
+              <a class="nav-link" href="?accion=galeria">Inicio - (current)</a>
+            </li>
+          </ul>
+          <!-- Icons -->
+          <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-money-check-alt"></i
+              >: {TOTAL}</a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-tag"></i
+              >: {ACUM}</a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="?accion=cart"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    
+    <div class="container-fluid p-3 mt-5">
+    <div class="tab-content shadow-lg">
+      <div class="row m-auto">
+        <div class="tab-pane fade show" id="heading-three">
+          <h3 class="m-3">Carrito de compras</h3>
+          <table class="table table-hover">
+            <caption class="text-center">
+              <a
+                class="btn btn-success"
+                href="?accion=galeria"
+              >
+                Ver productos
+            </a>
+            <a
+                class="btn btn-success"
+                href="?accion=vaciar"
+              >
+                Vaciar carrito
+            </a>
+            <a
+                class="btn btn-success"
+                href="?accion=ticket"
+              >
+                Mostrar resumen
+            </a>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" class="text-center">Imagen</th>
+                <th scope="col" class="text-center">Nombre</th>
+                <th scope="col" class="text-center">Descripcion</th>
+                <th scope="col" class="text-center">Precio</th>
+                <th scope="col" class="text-center">Cantidad</th>
+                <th scope="col" class="text-center">Importe</th>
+                <th scope="col" class="btn-size"></th>
+                <th scope="col" class="btn-size"></th>
+              </tr>
+            </thead>
+            <tbody class="registros">
+              <!-- Gallery -->
+              <tr>
+                <td class="text-center"><img src="{IMAGEN}" class="img-fluid"></td>
+                <td class="text-center">{NOMBRE}</td>
+                <td class="text-center">{DESCRIPCION}</td>
+                <td class="text-center">{PRECIO}</td>
+                <td class="text-center">{CANTIDAD}</td>
+                <td class="text-center">{IMPORTE}</td>
+                <td class="btn-size">
+                  <a
+                    class="btn btn-danger"
+                    href="?item={ID}&&accion=reducir"
+                  >
+                    <i class="fas fa-minus"></i>
+                  </a>
+                </td>
+                <td class="btn-size">
+                  <a
+                    class="btn btn-success"
+                    href="?item={ID}&&accion=agregar"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </td>
+              </tr>
+              <!-- Gallery -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="dark text-center text-white showcase" id="redes">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ffffff; color: black"
+            href="#"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            Dream shop es una tienda de ropa, los mejores diseñadores
+            contemporaneos y extravagantes, encuentra tu estilo y vistete con tu
+            personalidad, expresa lo que no habias expresado.
+          </p>
+        </section>
+        <section>
+          <!--Grid row-->
+          <div class="row d-flex align-content-center">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Categorias:</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#" class="text-white">Sudaderas</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Playeras</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Pantalones</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Accesorios</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Administracion:</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Mapa de sitio</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Politicas de la página</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Reporte de fallos</a>
+                </li>
+                <li>
+                  <a href="?accion=login" class="text-white">Modo administrador</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="#">DreamFollowers</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <div
+      class="modal fade"
+      id="modalUsuario2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              ¿Seguro que desea eliminar?
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Cancelar
+            </button>
+            <a href="" id="btnremplace" class="btn btn-danger text-center"
+              >Eliminar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script/main.js"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
+
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+    <script>
+      document
+        .querySelectorAll(".registros .btn-size button")
+        .forEach((elemento) => {
+          elemento.addEventListener("click", () => {
+            const idbtn = elemento.getAttribute("id");
+            var btn2 = document.getElementById("btnremplace");
+            btn2.href = "?accion=Eliminar_Usr&id=".concat(idbtn);
+          });
+        });
+    </script>
+  </body>
+</html>
